@@ -40,7 +40,25 @@ A TDEE (gasto total diário) é ajustada conforme o nível de atividade informad
    cd health-ai-agent
    ```
 
-2. Rode o agente principal e interaja com ele via terminal, interface web ou app (dependendo da implementação).
+2. Crie o ambiente virtual:
+   ```bash
+   python -m venv .venv
+   ```
+   
+3. Ative o ambiente virtual:
+   ```bash
+   # Activate (each new terminal)
+   # macOS/Linux: source .venv/bin/activate
+   # Windows CMD: .venv\Scripts\activate.bat
+   # Windows PowerShell: .venv\Scripts\Activate.ps1
+   ```
+
+4. Instale o ADK:
+   ```bash
+   pip install google-adk
+   ```
+
+5. Rode o agente principal e interaja com ele:
    ```bash
    adk web
    ```
